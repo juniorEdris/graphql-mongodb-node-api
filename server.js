@@ -24,6 +24,6 @@ app.use('/graphql', graphqlHTTP({
   graphiql: true,
 }))
 
-app.listen(4000, e => {
-    console.log('Graphql project started on port 4000');
+app.listen(8080, e => {
+    console.log('Graphql project started on port 8080');
 })

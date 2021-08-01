@@ -74,6 +74,14 @@ const RootQuery = new GraphQLObjectType({
                 return Subjects.find({})
             }
         },
+        deleteStudent: {
+            type: StudentType,
+            args: { id: { type: GraphQLID } },
+            resolve(parent,args) {
+                // code to get data from db
+                return Students.findByIdAndDelete(args.id)
+            }
+        },
     },
 })
 
