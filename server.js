@@ -7,7 +7,7 @@ const cors = require('cors')
 // APP
 const app = express()
 // database connection
-uri = 'mongodb+srv://jr_edris:my_portfolio_17@cluster0.s0vrs.mongodb.net/gain_task?retryWrites=true&w=majority'
+uri = '###'
 try {
     mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
     console.log('mongodb connected successfully...');
